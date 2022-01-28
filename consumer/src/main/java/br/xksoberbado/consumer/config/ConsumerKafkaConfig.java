@@ -73,9 +73,7 @@ public class ConsumerKafkaConfig {
         var factory = new ConcurrentKafkaListenerContainerFactory<String, Person>();
         factory.setConsumerFactory(personConsumerFactory());
         factory.setCommonErrorHandler(defaultErrorHandler());
-//        factory.setRecordInterceptor(adultInterceptor());
-//        factory.setRecordInterceptor(exampleInterceptor());
-//        factory.setBatchInterceptor();
+
         return factory;
     }
 
