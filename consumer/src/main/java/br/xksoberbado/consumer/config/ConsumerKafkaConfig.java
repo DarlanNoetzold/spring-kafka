@@ -111,14 +111,6 @@ public class ConsumerKafkaConfig {
         };
     }
 
-//    private RecordInterceptor<String, Person> adultInterceptor() {
-//        return record -> {
-//            log.info("Record: {}", record);
-//            var person = record.value();
-//            return person.getAge() >= 18 ? record : null;
-//        };
-//    }
-
     @Bean
     public ConsumerFactory jsonConsumerFactory() {
         var configs = new HashMap<String, Object>();
