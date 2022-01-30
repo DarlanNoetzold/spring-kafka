@@ -124,7 +124,6 @@ public class ConsumerKafkaConfig {
     public ConcurrentKafkaListenerContainerFactory jsonKafkaListenerContainerFactory() {
         var factory = new ConcurrentKafkaListenerContainerFactory();
         factory.setConsumerFactory(jsonConsumerFactory());
-//        factory.setMessageConverter(new JsonMessageConverter());
         factory.setMessageConverter(new BatchMessagingMessageConverter(new JsonMessageConverter()));
         factory.setBatchListener(true);
         return factory;
