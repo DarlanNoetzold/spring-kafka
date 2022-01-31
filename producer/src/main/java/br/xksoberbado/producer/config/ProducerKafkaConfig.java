@@ -34,11 +34,6 @@ public class ProducerKafkaConfig {
         return new DefaultKafkaProducerFactory<>(configs);
     }
 
-//    @Bean
-//    public KafkaTemplate<String, String> kafkaTemplate() {
-//        return new KafkaTemplate<>(producerFactory());
-//    }
-
     @Bean
     public RoutingKafkaTemplate routingTemplate(GenericApplicationContext context,
                                                 ProducerFactory producerFactory) {
