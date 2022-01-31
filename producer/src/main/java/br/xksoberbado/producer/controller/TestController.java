@@ -16,9 +16,6 @@ import java.util.stream.IntStream;
 public class TestController {
 
 //    @Autowired
-//    private KafkaTemplate<String, String> kafkaTemplate;
-//
-//    @Autowired
 //    private KafkaTemplate<String, Serializable> jsonKafkaTemplate;
 
     @Autowired
