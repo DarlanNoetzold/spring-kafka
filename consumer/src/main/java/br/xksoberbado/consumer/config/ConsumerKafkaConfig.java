@@ -94,12 +94,10 @@ public class ConsumerKafkaConfig {
 
     private RecordInterceptor<String, Person> exampleInterceptor() {
         return new RecordInterceptor<String, Person>() {
-
             @Override
             public ConsumerRecord<String, Person> intercept(final ConsumerRecord<String, Person> record) {
                 return record;
             }
-
 
             @Override
             public void success(final ConsumerRecord<String, Person> record, final Consumer<String, Person> consumer) {
