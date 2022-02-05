@@ -23,8 +23,4 @@ public @interface PersonCustomListener {
     String containerFactory() default "personKafkaListenerContainerFactory";
 
 
-
-//    @AliasFor(annotation = KafkaListener.class, attribute = "errorHandler")
-//    String errorHandler() default "myCustomHandler";
-
 }
