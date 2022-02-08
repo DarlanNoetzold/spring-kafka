@@ -25,10 +25,10 @@ public class TestListener {
         log.info("Thread: {} Messages: {}", Thread.currentThread().getId(), messages);
     }
 
-//    @KafkaListener(topics = "my-topic", groupId = "my-group")
-//    public void listen2(String message) {
-//        log.info("Thread: {} Message: {}", Thread.currentThread().getId(), message);
-//    }
+    @KafkaListener(topics = "my-topic", groupId = "my-group")
+    public void listen2(String message) {
+        log.info("Thread: {} Message: {}", Thread.currentThread().getId(), message);
+    }
 
 //    @KafkaListener(topicPartitions = {@TopicPartition(topic = "my-topic", partitions = "0")}, groupId = "my-group")
 //    public void listen2(String message, @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition) {

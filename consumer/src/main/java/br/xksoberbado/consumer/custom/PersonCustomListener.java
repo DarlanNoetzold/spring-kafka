@@ -16,6 +16,9 @@ public @interface PersonCustomListener {
     @AliasFor(annotation = KafkaListener.class, attribute = "groupId")
     String groupId() default "";
 
+    @AliasFor(annotation = KafkaListener.class, attribute = "groupId")
+    String groupId() default "";
+
     @AliasFor(annotation = KafkaListener.class, attribute = "topics")
     String[] topics() default "person-topic";
 
